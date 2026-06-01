@@ -119,4 +119,4 @@ ai-memory-engine/
 
 ## 👤 Author
 
-Built by [Your Name](https://github.com/vinaya285)
+Built by [Vinaya Bollampalli](https://github.com/vinaya285)
