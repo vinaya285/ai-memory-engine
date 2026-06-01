@@ -1,10 +1,11 @@
 import streamlit as st
 import requests
 from pathlib import Path
+import os
 
 # ── Config ───────────────────────────────────────────────
 
-API_URL = "http://localhost:8000"
+API_URL = API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 st.set_page_config(
     page_title="AI Memory Engine",

@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: ai-memory-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        value: ""
+      - key: CHROMA_DB_PATH
+        value: ./chroma_store
+      - key: COLLECTION_NAME
+        value: memory_engine
+
+  - type: web
+    name: ai-memory-ui
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run ui/app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: API_URL
+        value: https://ai-memory-api.onrender.com
