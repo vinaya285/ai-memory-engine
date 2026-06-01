@@ -1,3 +1,32 @@
+import sys
+print("Python version:", sys.version)
+print("Starting app imports...")
+
+from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+import tempfile
+import shutil
+import os
+from pathlib import Path
+
+print("FastAPI imported successfully")
+
+from api.schemas import (
+    SearchRequest, SearchResponse, SearchResultResponse,
+    ReconstructRequest, ReconstructResponse,
+    IngestResponse, StatusResponse, ClearResponse
+)
+print("Schemas imported")
+
+from vectors.pipeline import IngestionPipeline
+print("Pipeline imported")
+
+from search.semantic_search import SemanticSearch
+print("Search imported")
+
+from reconstruction.free_reconstructor import FreeReconstructor
+print("Reconstructor imported")
+
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import tempfile
