@@ -1,6 +1,7 @@
 # Core AI
 openai>=1.0.0
 chromadb>=0.4.0
+sentence-transformers>=2.2.2
 
 # Ingestion
 pillow>=10.0.0          # screenshots
