@@ -92,8 +92,8 @@ python main.py
 streamlit run ui/app.py
 ```
 
-### 6. Open the app
-http://localhost:8501
+### 6. Live Demo 
+see it here -> https://huggingface.co/spaces/vinaya281105/ai-memory-engine
 ---
 
 ## 📁 Project Structure
