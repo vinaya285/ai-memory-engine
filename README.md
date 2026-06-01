@@ -1,3 +1,13 @@
+---
+title: AI Memory Reconstruction Engine
+emoji: 🧠
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: "1.28.0"
+app_file: ui/hf_app.py
+pinned: false
+---
 # 🧠 AI Memory Reconstruction Engine
 
 > Rebuild forgotten context from your digital life using RAG architecture,
