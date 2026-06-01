@@ -1,0 +1,23 @@
+# Core AI
+openai>=1.0.0
+chromadb>=0.4.0
+
+# Ingestion
+pillow>=10.0.0          # screenshots
+pytesseract>=0.3.10     # OCR for screenshots
+pdfplumber>=0.10.0      # PDF notes
+SpeechRecognition>=3.10 # voice memos
+pydub>=0.25.1           # audio processing
+
+# Backend
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# Frontend
+streamlit>=1.28.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+tiktoken>=0.5.0
