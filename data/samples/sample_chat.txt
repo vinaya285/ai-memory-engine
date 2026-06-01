@@ -1,0 +1,5 @@
+[10:32 AM] Alice: Hey, did you finish the ML project?
+[10:33 AM] Me: Almost. Just need to add the vector search part.
+[10:35 AM] Alice: Nice. Are you using ChromaDB or Pinecone?
+[10:36 AM] Me: ChromaDB for now, keeping it local.
+[10:40 AM] Me: Actually thinking of switching to Pinecone for the hackathon demo.
